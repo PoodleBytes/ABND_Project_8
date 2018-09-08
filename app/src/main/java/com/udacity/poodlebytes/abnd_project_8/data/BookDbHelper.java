@@ -46,7 +46,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
 
         // Execute the SQL statement
         db.execSQL(SQL_CREATE_BOOKS_TABLE);
-        Log.i(TAG, "JR " + SQL_CREATE_BOOKS_TABLE);
+        Log.i(TAG, "JR " + SQL_CREATE_BOOKS_TABLE); //Charles - copy & paste this SQL statement works in SQLite
     }
 
     /**

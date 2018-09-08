@@ -21,6 +21,20 @@ public class BookData extends ArrayList {
                 2,
                 "Supplier Book 2",
                 "8005552222"));
+
+        bookList.add(new Book(
+                "Title 3",
+                3.00,
+                3,
+                "Supplier Book 3",
+                "8005553333"));
+
+        bookList.add(new Book(
+                "Title 4",
+                4.00,
+                4,
+                "Supplier Book 4",
+                "8005554444"));
         return bookList;
     }//end bookList
 }
