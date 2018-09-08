@@ -14,7 +14,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
     /**
      * Name of the database file
      */
-    private static final String DATABASE_NAME = "books.db";
+    private static final String DATABASE_NAME = "inventory1.db";
 
     /**
      * Database version. If you change the database schema, you must increment the database version.
@@ -35,6 +35,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.i(TAG, "JR start sqlCR8");
         // Create a String that contains the SQL statement to create the Books table
         String SQL_CREATE_BOOKS_TABLE = "CREATE TABLE " + BookEntry.TABLE_NAME + " ("
                 + BookEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -46,7 +47,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
 
         // Execute the SQL statement
         db.execSQL(SQL_CREATE_BOOKS_TABLE);
-        Log.i(TAG, "JR " + SQL_CREATE_BOOKS_TABLE); //Charles - copy & paste this SQL statement works in SQLite
+        Log.i(TAG, "JR onCreateSQL: " + SQL_CREATE_BOOKS_TABLE); //Charles - copy & paste this SQL statement works in SQLite
     }
 
     /**
